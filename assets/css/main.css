@@ -2598,12 +2598,21 @@ input, select, textarea {
 	}
 	/* MEU */
 		
+		.image.perfil{
+			width: 30%;
+			border-radius: 100%;
+			float: left;
+			/* margin-right: 40px; */
+		}
+
 		.image.custom.main
 		{
 			display:block;
 			margin: 20px auto;
 			width: 70%;
+			height: auto;
 			text-align: center;
+			padding-bottom: 4%;
 		}
 
 		.image.custom.simple
@@ -2667,9 +2676,14 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
-			margin: 4rem 0 0 0;
+			/* display: block;
+			top: 10%;
+			margin: 0;
+			width: 10%; */
+			position: relative;
 			width: 100%;
+			padding-bottom: 20%;
+			height: 0;
 		}
 
 			.image.main:first-child {
@@ -3269,7 +3283,8 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("../../images/coding+.jpg");
+			/* background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg"); */
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3347,6 +3362,15 @@ input, select, textarea {
 		z-index: 1;
 		min-height: 100vh;
 	}
+
+		#intro > .bg-panel
+		{
+			display: block;
+			background-color: rgba(220, 220, 220, 0.2);
+			width: 150%;
+			padding-top: 20px;
+			margin: 20px 0;
+		}
 
 		#intro input, #intro select, #intro textarea {
 			color: #ffffff;
@@ -3898,6 +3922,7 @@ input, select, textarea {
 				line-height: 0.5;
 				margin: 0 0 2rem 0;
 			}
+
 
 			#main > .post.featured {
 				text-align: center;
